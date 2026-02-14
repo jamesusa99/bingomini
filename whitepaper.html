@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BingoMini I 技术规格白皮书 — BingoMini</title>
+  <meta name="description" content="BingoMini I (缤果魔盒) 技术规格白皮书：核心硬件、存储、物理规格、连接性与环境要求。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="header glass">
+    <nav class="nav">
+      <a href="index.html" class="logo">Bingo<span class="logo-mini neon">Mini</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="index.html#hardware">硬件规格</a></li>
+        <li><a href="index.html#applications">应用生态</a></li>
+        <li><a href="index.html#privacy">隐私安全</a></li>
+        <li><a href="index.html#quickstart">快速开始</a></li>
+        <li><a href="index.html#developers">技术文档</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section whitepaper-page">
+      <div class="container">
+        <a href="index.html#developers" class="back-link">← 返回技术文档</a>
+
+        <div class="whitepaper glass">
+          <h1 class="whitepaper-title">BingoMini I 技术规格白皮书 <span class="mono">Technical White Paper</span></h1>
+          <p class="whitepaper-intro">缤果魔盒 (BingoBox / Bingo Mini) 核心硬件规格，作为私有化 AI 算力中心的高性能与高可靠性说明。</p>
+
+          <div class="whitepaper-chapter">
+            <h4>1. 核心算力单元 Core Processing Unit</h4>
+            <p>采用全球领先的嵌入式 AI 计算平台，为本地大规模模型提供稳定、持久的动力。</p>
+            <ul class="whitepaper-specs">
+              <li><span class="mono">核心芯片 (SoC)</span>：NVIDIA Jetson AGX Orin</li>
+              <li><span class="mono">AI 算力</span>：275 TOPS (INT8)</li>
+              <li><span class="mono">显存/内存</span>：64GB LPDDR5（支持大参数量 LLM 及复杂视觉算法）</li>
+              <li><span class="mono">GPU 架构</span>：集成 NVIDIA Ampere 架构 GPU，2048 CUDA 核心 + 64 Tensor 核心</li>
+            </ul>
+          </div>
+
+          <div class="whitepaper-chapter">
+            <h4>2. 存储与数据管理 Storage & Data Management</h4>
+            <p>针对个人及家庭隐私数据保护，采用大容量、高并发的本地存储方案。</p>
+            <ul class="whitepaper-specs">
+              <li><span class="mono">系统/应用存储</span>：1TB NVMe M.2 固态硬盘</li>
+              <li><span class="mono">数据主权</span>：所有交互数据、生成内容、家庭文档均在本地 1TB 空间内循环，物理上杜绝云端泄密风险</li>
+              <li><span class="mono">读写表现</span>：高带宽 NVMe 接口，确保 AI 任务在频繁读取本地知识库时无卡顿</li>
+            </ul>
+          </div>
+
+          <div class="whitepaper-chapter">
+            <h4>3. 物理规格与交互设计 Physical Specification</h4>
+            <p>外观设计兼具工业美学与极简易用性。</p>
+            <ul class="whitepaper-specs">
+              <li><span class="mono">外观尺寸</span>：15 cm × 15 cm × 20 cm</li>
+              <li><span class="mono">机身材质</span>：赛博风格黑色金属/高性能聚合物，高效散热栅格设计</li>
+              <li><span class="mono">交互屏幕</span>：4.x 英寸嵌入式触摸屏，实时 IP 显示、状态监控及一键开机配置</li>
+              <li><span class="mono">整机功耗</span>：≤ 60W（超低待机功耗，适合 24/7 全天候运行）</li>
+            </ul>
+          </div>
+
+          <div class="whitepaper-chapter">
+            <h4>4. 连接性与扩展接口 Connectivity & Interface</h4>
+            <ul class="whitepaper-specs">
+              <li><span class="mono">无线连接</span>：双频 Wi-Fi</li>
+              <li><span class="mono">有线连接</span>：1000M LAN 以太网 (RJ45)</li>
+              <li><span class="mono">配置方式</span>：无需外部键盘、鼠标或显示器；支持手机浏览器扫码 (QR Code) 建立连接</li>
+            </ul>
+          </div>
+
+          <div class="whitepaper-chapter">
+            <h4>5. 环境要求与合规 Environmental & Compliance</h4>
+            <ul class="whitepaper-specs">
+              <li><span class="mono">适用场景</span>：家用、小微型企业团队（建议 3 人以内同时使用）</li>
+              <li><span class="mono">运行环境</span>：纯本地局域网环境下可完全离线运行 AI 功能</li>
+            </ul>
+          </div>
+
+          <div class="whitepaper-summary">
+            <h4>产品型号与价格 Summary</h4>
+            <ul class="whitepaper-specs">
+              <li><span class="mono">产品全称</span>：缤果魔盒 (BingoBox / Bingo Mini)</li>
+              <li><span class="mono">首款型号</span>：BingoMini I</li>
+              <li><span class="mono">官方售价</span>：<strong class="neon">21,680 元/台</strong></li>
+            </ul>
+          </div>
+
+          <div class="whitepaper-footer">
+            <a href="index.html#developers" class="back-link">← 返回技术文档</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="container">
+      <p class="footer-logo">Bingo<span class="neon">Mini</span></p>
+      <p class="footer-tagline">您的个人私有 AI 算力中心 · 数据永不出屋</p>
+      <p class="footer-copy">© 2025 BingoMini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

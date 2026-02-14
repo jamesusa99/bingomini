@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BingoMini — 您的个人私有 AI 算力中心</title>
+  <meta name="description" content="BingoMini：彻底告别按量计费与隐私焦虑。全本地运行，数据永不出屋。No Token, No Cloud.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="header glass">
+    <nav class="nav">
+      <a href="#" class="logo">Bingo<span class="logo-mini neon">Mini</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#hardware">硬件规格</a></li>
+        <li><a href="#applications">应用生态</a></li>
+        <li><a href="#privacy">隐私安全</a></li>
+        <li><a href="#quickstart">快速开始</a></li>
+        <li><a href="#developers">开发者</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-parallax" data-parallax="0.15">
+        <div class="hero-device-placeholder">
+          <span>BingoBox</span>
+        </div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-headline neon-text">No Token, No Cloud.</p>
+        <p class="hero-badge">全本地 · 零上云 · 终身可用</p>
+        <h1 class="hero-title">
+          <span class="typewriter" data-text="BingoMini：您的个人私有 AI 算力中心"></span>
+        </h1>
+        <p class="hero-subtitle">
+          彻底告别按量计费与隐私焦虑。全本地运行，数据永不出屋。
+        </p>
+        <div class="hero-features">
+          <div class="feature-card glass cyber-hover">
+            <div class="feature-icon neon-pulse">∞</div>
+            <h3>无限次使用</h3>
+            <p>一次购买，终身免费。24 小时待命，摆脱 API 额度焦虑。</p>
+          </div>
+          <div class="feature-card glass cyber-hover">
+            <div class="feature-icon neon-pulse">🔒</div>
+            <h3>绝对隐私</h3>
+            <p>数据主权回归个人，本地存储处理，物理层面隔离泄密风险。</p>
+          </div>
+          <div class="feature-card glass cyber-hover">
+            <div class="feature-icon neon-pulse">📡</div>
+            <h3>离线可用</h3>
+            <p>支持纯本地局域网运行，断网也能高效响应。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware - Performance Dashboard -->
+    <section id="hardware" class="section hardware scroll-reveal">
+      <div class="container">
+        <h2 class="section-title">澎湃性能 · Raw Performance</h2>
+        <p class="section-subtitle">Bingo Mini I — NVIDIA Jetson AGX Orin 旗舰算力</p>
+        <div class="perf-dashboard glass">
+          <div class="perf-header">
+            <span class="perf-label">HARDWARE MONITOR</span>
+            <span class="perf-status">● ONLINE</span>
+          </div>
+          <div class="perf-grid">
+            <div class="perf-metric">
+              <span class="perf-name">AI 算力</span>
+              <span class="perf-value mono">275 TOPS</span>
+              <div class="perf-bar"><div class="perf-fill" style="--fill: 100%"></div></div>
+            </div>
+            <div class="perf-metric">
+              <span class="perf-name">内存 / 显存</span>
+              <span class="perf-value mono">64 GB</span>
+              <div class="perf-bar"><div class="perf-fill" style="--fill: 100%"></div></div>
+            </div>
+            <div class="perf-metric">
+              <span class="perf-name">存储</span>
+              <span class="perf-value mono">1 TB NVMe</span>
+              <div class="perf-bar"><div class="perf-fill" style="--fill: 75%"></div></div>
+            </div>
+            <div class="perf-metric">
+              <span class="perf-name">功耗</span>
+              <span class="perf-value mono">≤ 60 W</span>
+              <div class="perf-bar perf-bar-low"><div class="perf-fill" style="--fill: 35%"></div></div>
+            </div>
+          </div>
+          <div class="spec-detail">
+            <span class="mono">NVIDIA Jetson AGX Orin</span> · 4.x" 触摸屏 · 扫码即连
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications -->
+    <section id="applications" class="section applications scroll-reveal">
+      <div class="container">
+        <h2 class="section-title">AI 应用全家桶</h2>
+        <p class="section-subtitle">全本地预装，深度优化，媲美云端体验</p>
+        <div class="app-grid">
+          <div class="app-card glass cyber-hover">
+            <div class="app-icon">📚</div>
+            <h3>私有大模型</h3>
+            <p>部署个人知识库，让 AI 学习您的本地文档，回答仅属于您的专业问题。</p>
+          </div>
+          <div class="app-card glass cyber-hover">
+            <div class="app-icon">🎨</div>
+            <h3>本地文生图</h3>
+            <p>高精度生成图像，无需排队，无创作限制，无隐私泄露。</p>
+          </div>
+          <div class="app-card glass cyber-hover">
+            <div class="app-icon">🎬</div>
+            <h3>视频/音频创作</h3>
+            <p>利用强大 GPU 算力进行视频剪辑增强或音乐创作。</p>
+          </div>
+          <div class="app-card glass cyber-hover">
+            <div class="app-icon">💻</div>
+            <h3>代码助手</h3>
+            <p>在本地安全的编程环境中，提供高效的代码生成与调试支持。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy - Data Sovereignty Visualized -->
+    <section id="privacy" class="section privacy scroll-reveal">
+      <div class="container">
+        <h2 class="section-title">隐私与安全 · Data Sovereignty</h2>
+        <p class="section-subtitle">为什么选择 BingoMini？</p>
+        <div class="privacy-shield glass">
+          <div class="shield-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 4L8 16v16c0 16 10 24 24 28 14-4 24-12 24-28V16L32 4z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="32" cy="32" r="8" class="shield-core"/>
+            </svg>
+          </div>
+          <div class="data-flow">
+            <div class="flow-node flow-storage">
+              <span>1TB SSD</span>
+              <small>本地存储</small>
+            </div>
+            <div class="flow-arrow">⇄</div>
+            <div class="flow-node flow-gpu">
+              <span>Jetson Orin</span>
+              <small>本地计算</small>
+            </div>
+            <div class="flow-blocked">
+              <span>☠</span> 云端 · 永不连接
+            </div>
+          </div>
+          <p class="privacy-tagline">Local-Only · 数据物理隔离 · 无审计自由创作</p>
+        </div>
+        <div class="privacy-grid">
+          <div class="privacy-card glass">
+            <div class="privacy-number mono">01</div>
+            <h3>物理安全隔离</h3>
+            <p>不同于 SaaS 将数据上传云端，BingoMini 的数据只存在于您的物理设备中。</p>
+          </div>
+          <div class="privacy-card glass">
+            <div class="privacy-number mono">02</div>
+            <h3>应用间沙盒隔离</h3>
+            <p>所有 AI 应用以 Docker 容器化运行，应用间数据完全隔离，互不干扰。</p>
+          </div>
+          <div class="privacy-card glass">
+            <div class="privacy-number mono">03</div>
+            <h3>无审计自由创作</h3>
+            <p>您的输入不会被任何平台审查或由于合规理由被拦截。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Start - Status Pulse -->
+    <section id="quickstart" class="section quickstart scroll-reveal">
+      <div class="container">
+        <h2 class="section-title">极简操作 · 三步开启</h2>
+        <p class="section-subtitle">模拟机身触摸屏 · 扫码即连</p>
+        <div class="steps">
+          <button class="step glass status-pulse">
+            <div class="step-num mono">1</div>
+            <h3>开机连网</h3>
+            <p>插入网线或触摸屏连接 Wi-Fi</p>
+          </button>
+          <div class="step-arrow neon-pulse">→</div>
+          <button class="step glass status-pulse">
+            <div class="step-num mono">2</div>
+            <h3>扫码连接</h3>
+            <p>扫描机身屏幕二维码</p>
+          </button>
+          <div class="step-arrow neon-pulse">→</div>
+          <button class="step glass status-pulse">
+            <div class="step-num mono">3</div>
+            <h3>即刻开始</h3>
+            <p>网页端使用，无需安装客户端</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developers -->
+    <section id="developers" class="section developers scroll-reveal">
+      <div class="container">
+        <h2 class="section-title">技术文档 · For Developers</h2>
+        <p class="section-subtitle">开发者规则与接口说明</p>
+        <div class="dev-docs">
+          <div class="dev-block glass">
+            <h4>镜像封装</h4>
+            <p>采用 NVIDIA Container Toolkit 封装，支持多版本 PyTorch/CUDA 环境。</p>
+          </div>
+          <div class="dev-block glass">
+            <h4>存储约定</h4>
+            <p>应用存储路径统一锁定为 <code class="mono">/appspace/[Unique_ID]/</code>，确保应用自包含且不冲突。</p>
+          </div>
+          <div class="dev-block glass">
+            <h4>API 接口</h4>
+            <p>支持标准 HTTP POST 接口调用，方便开发者构建自定义 UI。</p>
+          </div>
+          <a href="whitepaper.html" class="dev-block glass dev-block-link">
+            <h4>BingoMini I 技术规格白皮书</h4>
+            <p>查看完整技术白皮书，了解核心硬件规格、存储、物理设计、连接性与环境要求。<span class="link-arrow">→</span></p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="container">
+      <p class="footer-logo">Bingo<span class="neon">Mini</span></p>
+      <p class="footer-tagline">您的个人私有 AI 算力中心 · 数据永不出屋</p>
+      <p class="footer-copy">© 2025 BingoMini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

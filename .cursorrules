@@ -1,0 +1,23 @@
+# BingoMini 设计规范
+
+## 核心视觉风格 (Visual Identity)
+- **Dark Mode Excellence**：深色模式，以 #0D0D0D 为基调，搭配冷色调对比
+- **Neon Accent**：借鉴 BingoBox 机身光条，使用 #FF4D00（橙红）或 #00F2FF（电子蓝）作为重点元素的呼吸灯效果
+- **Glassmorphism**：卡片使用半透明磨砂玻璃质感，配合细微的边框发光（Border Glow）
+- **Grid System**：背景使用深灰色细线网格，模拟芯片电路或坐标系
+- **Monospace Typography**：关键数据和参数（如 275 TOPS, 64GB）使用 JetBrains Mono 等宽字体
+
+## 核心卖点 UI 设计词
+- **Privacy First / Data Sovereignty Visualized**：物理防火墙动效，数据在本地 SSD 与 GPU 之间循环
+- **Raw Performance Display**：专业显卡监控面板风格，展示算力仪表盘
+
+## 页面交互动效
+- **Cybernetic Hover**：鼠标悬停时卡片边框出现流动闪烁灯光
+- **Typewriter Effect**：标题逐字跳出
+- **Parallax Scroll**：机身图滚动时轻微位移
+- **Status Pulse**：按钮带雷达波纹扩散效果
+
+## 色彩变量
+- --bg-deep: #0D0D0D
+- --accent-blue: #00F2FF
+- --accent-orange: #FF4D00
