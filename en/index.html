@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BingoMini — 您的个人私有 AI 算力中心</title>
-  <meta name="description" content="BingoMini：彻底告别按量计费与隐私焦虑。全本地运行，数据永不出屋。No Token, No Cloud.">
+  <title>BingoMini — Your Personal Private AI Compute Center</title>
+  <meta name="description" content="BingoMini: No Token, No Cloud. Fully local AI. Data never leaves your home.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <div class="grid-bg" aria-hidden="true"></div>
 
   <header class="header glass">
     <nav class="nav">
-      <a href="#" class="logo">Bingo<span class="logo-mini neon">Mini</span></a>
+      <a href="index.html" class="logo">Bingo<span class="logo-mini neon">Mini</span></a>
       <ul class="nav-links">
-        <li><a href="#home">首页</a></li>
-        <li><a href="#hardware">硬件规格</a></li>
-        <li><a href="#applications">应用生态</a></li>
-        <li><a href="#privacy">隐私安全</a></li>
-        <li><a href="#quickstart">快速开始</a></li>
-        <li><a href="#developers">开发者</a></li>
-        <li class="lang-switcher"><a href="en/index.html" class="lang-link">EN</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#applications">Apps</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#quickstart">Quick Start</a></li>
+        <li><a href="#developers">Developers</a></li>
+        <li class="lang-switcher"><a href="../index.html" class="lang-link">中文</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="菜单">
+      <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
   <main>
-    <!-- Hero -->
     <section id="home" class="hero">
       <div class="hero-bg"></div>
       <div class="hero-parallax" data-parallax="0.15">
@@ -42,38 +41,37 @@
       </div>
       <div class="hero-content">
         <p class="hero-headline neon-text">No Token, No Cloud.</p>
-        <p class="hero-badge">全本地 · 零上云 · 终身可用</p>
+        <p class="hero-badge">All Local · Zero Cloud · Lifetime Use</p>
         <h1 class="hero-title">
-          <span class="typewriter" data-text="BingoMini：您的个人私有 AI 算力中心"></span>
+          <span class="typewriter" data-text="BingoMini: Your Personal Private AI Compute Center"></span>
         </h1>
         <p class="hero-subtitle">
-          彻底告别按量计费与隐私焦虑。全本地运行，数据永不出屋。
+          Say goodbye to usage-based billing and privacy anxiety. Fully local. Your data never leaves your home.
         </p>
         <div class="hero-features">
           <div class="feature-card glass cyber-hover">
             <div class="feature-icon neon-pulse">∞</div>
-            <h3>无限次使用</h3>
-            <p>一次购买，终身免费。24 小时待命，摆脱 API 额度焦虑。</p>
+            <h3>Unlimited Usage</h3>
+            <p>Buy once, use forever. 24/7 standby. No API limits, no token anxiety.</p>
           </div>
           <div class="feature-card glass cyber-hover">
             <div class="feature-icon neon-pulse">🔒</div>
-            <h3>绝对隐私</h3>
-            <p>数据主权回归个人，本地存储处理，物理层面隔离泄密风险。</p>
+            <h3>Absolute Privacy</h3>
+            <p>Data sovereignty returns to you. All processing happens locally. Physically isolated from cloud risks.</p>
           </div>
           <div class="feature-card glass cyber-hover">
             <div class="feature-icon neon-pulse">📡</div>
-            <h3>离线可用</h3>
-            <p>支持纯本地局域网运行，断网也能高效响应。</p>
+            <h3>Offline Ready</h3>
+            <p>Runs on pure local LAN. Disconnect from the internet and your AI still responds.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Hardware - Performance Dashboard -->
     <section id="hardware" class="section hardware scroll-reveal">
       <div class="container">
-        <h2 class="section-title">澎湃性能 · Raw Performance</h2>
-        <p class="section-subtitle">Bingo Mini I — NVIDIA Jetson AGX Orin 旗舰算力</p>
+        <h2 class="section-title">Raw Performance · Flagship Hardware</h2>
+        <p class="section-subtitle">Bingo Mini I — NVIDIA Jetson AGX Orin Flagship AI Compute</p>
         <div class="perf-dashboard glass">
           <div class="perf-header">
             <span class="perf-label">HARDWARE MONITOR</span>
@@ -81,68 +79,66 @@
           </div>
           <div class="perf-grid">
             <div class="perf-metric">
-              <span class="perf-name">AI 算力</span>
+              <span class="perf-name">AI Compute</span>
               <span class="perf-value mono">275 TOPS</span>
               <div class="perf-bar"><div class="perf-fill" style="--fill: 100%"></div></div>
             </div>
             <div class="perf-metric">
-              <span class="perf-name">内存 / 显存</span>
+              <span class="perf-name">Memory / VRAM</span>
               <span class="perf-value mono">64 GB</span>
               <div class="perf-bar"><div class="perf-fill" style="--fill: 100%"></div></div>
             </div>
             <div class="perf-metric">
-              <span class="perf-name">存储</span>
+              <span class="perf-name">Storage</span>
               <span class="perf-value mono">1 TB NVMe</span>
               <div class="perf-bar"><div class="perf-fill" style="--fill: 75%"></div></div>
             </div>
             <div class="perf-metric">
-              <span class="perf-name">功耗</span>
+              <span class="perf-name">Power</span>
               <span class="perf-value mono">≤ 60 W</span>
               <div class="perf-bar perf-bar-low"><div class="perf-fill" style="--fill: 35%"></div></div>
             </div>
           </div>
           <div class="spec-detail">
-            <span class="mono">NVIDIA Jetson AGX Orin</span> · 4.x" 触摸屏 · 扫码即连
+            <span class="mono">NVIDIA Jetson AGX Orin</span> · 4.x" Touchscreen · Scan to Connect
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Applications -->
     <section id="applications" class="section applications scroll-reveal">
       <div class="container">
-        <h2 class="section-title">AI 应用全家桶</h2>
-        <p class="section-subtitle">全本地预装，深度优化，媲美云端体验</p>
+        <h2 class="section-title">AI App Suite</h2>
+        <p class="section-subtitle">Pre-installed locally. Deeply optimized. Cloud-like experience.</p>
         <div class="app-grid">
           <div class="app-card glass cyber-hover">
             <div class="app-icon">📚</div>
-            <h3>私有大模型</h3>
-            <p>部署个人知识库，让 AI 学习您的本地文档，回答仅属于您的专业问题。</p>
+            <h3>Private LLM</h3>
+            <p>Deploy personal knowledge base. Train AI on your local docs. Get answers only you own.</p>
           </div>
           <div class="app-card glass cyber-hover">
             <div class="app-icon">🎨</div>
-            <h3>本地文生图</h3>
-            <p>高精度生成图像，无需排队，无创作限制，无隐私泄露。</p>
+            <h3>Local Image Gen</h3>
+            <p>High-fidelity image generation. No queues. No limits. No privacy leaks.</p>
           </div>
           <div class="app-card glass cyber-hover">
             <div class="app-icon">🎬</div>
-            <h3>视频/音频创作</h3>
-            <p>利用强大 GPU 算力进行视频剪辑增强或音乐创作。</p>
+            <h3>Video & Audio</h3>
+            <p>Powerful GPU for video editing, enhancement, or music creation.</p>
           </div>
           <div class="app-card glass cyber-hover">
             <div class="app-icon">💻</div>
-            <h3>代码助手</h3>
-            <p>在本地安全的编程环境中，提供高效的代码生成与调试支持。</p>
+            <h3>Code Assistant</h3>
+            <p>Code generation and debugging in a secure local programming environment.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Privacy - Data Sovereignty Visualized -->
     <section id="privacy" class="section privacy scroll-reveal">
       <div class="container">
-        <h2 class="section-title">隐私与安全 · Data Sovereignty</h2>
-        <p class="section-subtitle">为什么选择 BingoMini？</p>
+        <h2 class="section-title">Privacy & Security · Data Sovereignty</h2>
+        <p class="section-subtitle">Why BingoMini?</p>
         <div class="privacy-shield glass">
           <div class="shield-icon">
             <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,87 +149,85 @@
           <div class="data-flow">
             <div class="flow-node flow-storage">
               <span>1TB SSD</span>
-              <small>本地存储</small>
+              <small>Local Storage</small>
             </div>
             <div class="flow-arrow">⇄</div>
             <div class="flow-node flow-gpu">
               <span>Jetson Orin</span>
-              <small>本地计算</small>
+              <small>Local Compute</small>
             </div>
             <div class="flow-blocked">
-              <span>☠</span> 云端 · 永不连接
+              <span>☠</span> Cloud · Never Connected
             </div>
           </div>
-          <p class="privacy-tagline">Local-Only · 数据物理隔离 · 无审计自由创作</p>
+          <p class="privacy-tagline">Local-Only · Physical Data Isolation · No Audit Censorship</p>
         </div>
         <div class="privacy-grid">
           <div class="privacy-card glass">
             <div class="privacy-number mono">01</div>
-            <h3>物理安全隔离</h3>
-            <p>不同于 SaaS 将数据上传云端，BingoMini 的数据只存在于您的物理设备中。</p>
+            <h3>Physical Isolation</h3>
+            <p>Unlike SaaS that uploads to the cloud, BingoMini data stays only on your physical device.</p>
           </div>
           <div class="privacy-card glass">
             <div class="privacy-number mono">02</div>
-            <h3>应用间沙盒隔离</h3>
-            <p>所有 AI 应用以 Docker 容器化运行，应用间数据完全隔离，互不干扰。</p>
+            <h3>App Sandboxing</h3>
+            <p>All AI apps run in Docker containers. Complete data isolation between apps.</p>
           </div>
           <div class="privacy-card glass">
             <div class="privacy-number mono">03</div>
-            <h3>无审计自由创作</h3>
-            <p>您的输入不会被任何平台审查或由于合规理由被拦截。</p>
+            <h3>No Audit Censorship</h3>
+            <p>Your input is never reviewed or blocked by any platform for compliance.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Quick Start - Status Pulse -->
     <section id="quickstart" class="section quickstart scroll-reveal">
       <div class="container">
-        <h2 class="section-title">极简操作 · 三步开启</h2>
-        <p class="section-subtitle">模拟机身触摸屏 · 扫码即连</p>
+        <h2 class="section-title">Three Steps · Get Started</h2>
+        <p class="section-subtitle">Touchscreen on device · Scan to connect</p>
         <div class="steps">
           <button class="step glass status-pulse">
             <div class="step-num mono">1</div>
-            <h3>开机连网</h3>
-            <p>插入网线或触摸屏连接 Wi-Fi</p>
+            <h3>Power & Connect</h3>
+            <p>Plug in Ethernet or connect via touchscreen Wi-Fi</p>
           </button>
           <div class="step-arrow neon-pulse">→</div>
           <button class="step glass status-pulse">
             <div class="step-num mono">2</div>
-            <h3>扫码连接</h3>
-            <p>扫描机身屏幕二维码</p>
+            <h3>Scan QR Code</h3>
+            <p>Scan the QR code on the device screen</p>
           </button>
           <div class="step-arrow neon-pulse">→</div>
           <button class="step glass status-pulse">
             <div class="step-num mono">3</div>
-            <h3>即刻开始</h3>
-            <p>网页端使用，无需安装客户端</p>
+            <h3>Start Using</h3>
+            <p>Use AI tools in browser. No client install.</p>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- Developers -->
     <section id="developers" class="section developers scroll-reveal">
       <div class="container">
-        <h2 class="section-title">技术文档 · For Developers</h2>
-        <p class="section-subtitle">开发者规则与接口说明</p>
+        <h2 class="section-title">Technical Docs · For Developers</h2>
+        <p class="section-subtitle">Developer rules and API reference</p>
         <div class="dev-docs">
           <div class="dev-block glass">
-            <h4>镜像封装</h4>
-            <p>采用 NVIDIA Container Toolkit 封装，支持多版本 PyTorch/CUDA 环境。</p>
+            <h4>Container Images</h4>
+            <p>NVIDIA Container Toolkit. Multi-version PyTorch/CUDA support.</p>
           </div>
           <div class="dev-block glass">
-            <h4>存储约定</h4>
-            <p>应用存储路径统一锁定为 <code class="mono">/appspace/[Unique_ID]/</code>，确保应用自包含且不冲突。</p>
+            <h4>Storage Convention</h4>
+            <p>App storage path: <code class="mono">/appspace/[Unique_ID]/</code>. Self-contained, conflict-free.</p>
           </div>
           <div class="dev-block glass">
-            <h4>API 接口</h4>
-            <p>支持标准 HTTP POST 接口调用，方便开发者构建自定义 UI。</p>
+            <h4>API Interface</h4>
+            <p>Standard HTTP POST. Build custom UIs easily.</p>
           </div>
           <a href="whitepaper.html" class="dev-block glass dev-block-link">
-            <h4>BingoMini I 技术规格白皮书</h4>
-            <p>查看完整技术白皮书，了解核心硬件规格、存储、物理设计、连接性与环境要求。<span class="link-arrow">→</span></p>
+            <h4>BingoMini I Technical White Paper</h4>
+            <p>Full technical specs: core hardware, storage, physical design, connectivity, and environmental requirements.<span class="link-arrow">→</span></p>
           </a>
         </div>
       </div>
@@ -243,11 +237,11 @@
   <footer class="footer glass">
     <div class="container">
       <p class="footer-logo">Bingo<span class="neon">Mini</span></p>
-      <p class="footer-tagline">您的个人私有 AI 算力中心 · 数据永不出屋</p>
+      <p class="footer-tagline">Your Personal Private AI Compute Center · Data Never Leaves Your Home</p>
       <p class="footer-copy">© 2025 BingoMini. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>

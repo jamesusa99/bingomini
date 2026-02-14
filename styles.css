@@ -185,6 +185,22 @@ button {
   color: var(--accent-blue);
 }
 
+.lang-switcher {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
+}
+
+.lang-switcher .lang-link {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.lang-switcher .lang-link:hover,
+.lang-switcher .lang-link.active {
+  color: var(--accent-blue);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
