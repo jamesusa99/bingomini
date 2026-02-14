@@ -1,5 +1,35 @@
 // BingoMini — 导航、动效与交互
+const THEME_KEY = 'bingomini-theme';
+
+// 主题切换 - 尽早执行避免闪烁（默认浅色，可选深色）
+(function initTheme() {
+  const saved = localStorage.getItem(THEME_KEY);
+  const theme = saved || 'light';
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
+  // 主题切换按钮
+  const themeToggle = document.getElementById('theme-toggle');
+  const isEn = document.documentElement.lang === 'en';
+  const labels = isEn
+    ? { dark: 'Switch to light mode', light: 'Switch to dark mode' }
+    : { dark: '切换为浅色模式', light: '切换为深色模式' };
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const root = document.documentElement;
+      const current = root.getAttribute('data-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem(THEME_KEY, next);
+      themeToggle.setAttribute('title', next === 'dark' ? labels.dark : labels.light);
+      themeToggle.textContent = next === 'dark' ? '☀️' : '🌙';
+    });
+    const theme = document.documentElement.getAttribute('data-theme') || 'light';
+    themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    themeToggle.setAttribute('title', theme === 'dark' ? labels.dark : labels.light);
+  }
+
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
