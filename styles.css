@@ -292,6 +292,14 @@ button {
   color: var(--text-muted);
 }
 
+.hero-device-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 40px var(--accent-glow);
+}
+
 .hero-content {
   max-width: 900px;
   text-align: center;
@@ -534,6 +542,119 @@ button {
 .app-card p {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+/* 应用场景 Use Cases */
+.usecases .usecase-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.usecase-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.usecase-card:nth-child(even) {
+  direction: rtl;
+}
+
+.usecase-card:nth-child(even) > * {
+  direction: ltr;
+}
+
+.usecase-img-wrap {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+.usecase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.usecase-content {
+  padding: 2rem;
+}
+
+.usecase-tag {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+.usecase-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.usecase-lead {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.usecase-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.usecase-block h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.usecase-block ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.usecase-block li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.usecase-block li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--accent-blue);
+}
+
+.usecase-block li strong {
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .usecase-card {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+  .usecase-card:nth-child(even) {
+    direction: ltr;
+  }
 }
 
 /* Privacy - Data Sovereignty */
