@@ -1,23 +1,23 @@
-/* BingoMini — Dark Mode Excellence · Cyber-Industrial */
+/* BingoMini — 轻松舒适色调 Light & Relaxed */
 :root {
-  --bg-deep: #0D0D0D;
-  --bg-card: rgba(20, 20, 24, 0.6);
-  --bg-elevated: rgba(30, 32, 40, 0.5);
-  --accent-blue: #00F2FF;
-  --accent-orange: #FF4D00;
+  --bg-deep: #f7f6f3;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-elevated: rgba(255, 255, 255, 0.95);
+  --accent-blue: #4A9EBB;
+  --accent-orange: #D4A574;
   --accent: var(--accent-blue);
-  --accent-glow: rgba(0, 242, 255, 0.3);
-  --accent-orange-glow: rgba(255, 77, 0, 0.25);
-  --text: #f4f4f5;
-  --text-muted: #a1a1aa;
-  --border: rgba(148, 163, 184, 0.15);
-  --border-glow: rgba(0, 242, 255, 0.4);
+  --accent-glow: rgba(74, 158, 187, 0.2);
+  --accent-orange-glow: rgba(212, 165, 116, 0.2);
+  --text: #2c2c2c;
+  --text-muted: #6b7280;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-glow: rgba(74, 158, 187, 0.4);
   --font-sans: 'Outfit', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius: 12px;
   --radius-lg: 20px;
-  --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.06);
 }
 
 *,
@@ -51,31 +51,30 @@ button {
   border: none;
 }
 
-/* Grid System - 芯片电路背景 */
+/* Grid System - 浅色网格背景 */
 .grid-bg {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(60, 60, 70, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(60, 60, 70, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Glassmorphism */
+/* Glassmorphism - 轻盈卡片 */
 .glass {
   background: var(--glass-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--glass-border);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
-/* Neon Accent */
+/* Accent 强调色 */
 .neon {
   color: var(--accent-blue);
-  text-shadow: 0 0 20px var(--accent-glow);
 }
 
 .neon-text {
@@ -83,7 +82,6 @@ button {
   font-family: var(--font-mono);
   font-weight: 500;
   letter-spacing: 0.15em;
-  text-shadow: 0 0 30px var(--accent-glow);
 }
 
 .neon-pulse {
@@ -91,8 +89,8 @@ button {
 }
 
 @keyframes neon-pulse {
-  0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px var(--accent-glow)); }
-  50% { opacity: 0.85; filter: drop-shadow(0 0 16px var(--accent-glow)); }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
 }
 
 /* Monospace for specs */
@@ -101,7 +99,7 @@ button {
   font-weight: 500;
 }
 
-/* Cybernetic Hover - 流动闪烁边框 */
+/* Cybernetic Hover - 轻柔悬停边框 */
 .cyber-hover {
   position: relative;
   overflow: hidden;
@@ -110,9 +108,9 @@ button {
 .cyber-hover::before {
   content: '';
   position: absolute;
-  inset: -2px;
+  inset: -1px;
   border-radius: inherit;
-  padding: 2px;
+  padding: 1px;
   background: linear-gradient(90deg,
     transparent,
     var(--accent-blue),
@@ -131,7 +129,7 @@ button {
 }
 
 .cyber-hover:hover::before {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 @keyframes cyber-flow {
@@ -224,7 +222,7 @@ button {
     right: 0;
     left: 0;
     flex-direction: column;
-    background: rgba(13, 13, 13, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
     padding: 2rem;
@@ -267,8 +265,8 @@ button {
   inset: 0;
   background:
     radial-gradient(ellipse 80% 50% at 50% -20%, var(--accent-glow), transparent 50%),
-    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(0, 242, 255, 0.06), transparent),
-    radial-gradient(ellipse 50% 30% at 20% 80%, rgba(255, 77, 0, 0.04), transparent);
+    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(74, 158, 187, 0.08), transparent),
+    radial-gradient(ellipse 50% 30% at 20% 80%, rgba(212, 165, 116, 0.06), transparent);
   pointer-events: none;
 }
 
@@ -282,7 +280,7 @@ button {
 .hero-device-placeholder {
   width: 180px;
   height: 240px;
-  border: 2px dashed rgba(0, 242, 255, 0.2);
+  border: 2px dashed rgba(74, 158, 187, 0.25);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -297,7 +295,7 @@ button {
   width: 100%;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 0 40px var(--accent-glow);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content {
@@ -317,7 +315,7 @@ button {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.04);
   padding: 0.4rem 1rem;
   border-radius: 999px;
   margin-bottom: 1.5rem;
@@ -368,7 +366,7 @@ button {
 
 .feature-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 40px var(--accent-glow);
+  box-shadow: 0 8px 32px rgba(74, 158, 187, 0.15);
 }
 
 .feature-icon {
@@ -426,14 +424,14 @@ button {
 
 /* Hardware - Performance Dashboard */
 .hardware {
-  background: linear-gradient(180deg, transparent, rgba(0, 242, 255, 0.02), transparent);
+  background: linear-gradient(180deg, transparent, rgba(74, 158, 187, 0.05), transparent);
 }
 
 .perf-dashboard {
   border-radius: var(--radius-lg);
   padding: 2rem;
   border: 1px solid var(--border);
-  box-shadow: 0 0 0 1px rgba(0, 242, 255, 0.05);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
 }
 
 .perf-header {
@@ -455,8 +453,7 @@ button {
 .perf-status {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: #22c55e;
-  text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+  color: #16a34a;
 }
 
 .perf-grid {
@@ -468,7 +465,7 @@ button {
 
 .perf-metric {
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.04);
   border-radius: var(--radius);
 }
 
@@ -488,7 +485,7 @@ button {
 
 .perf-bar {
   height: 6px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.06);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -500,7 +497,7 @@ button {
 .perf-fill {
   height: 100%;
   width: var(--fill, 0%);
-  background: linear-gradient(90deg, var(--accent-blue), #67e8f9);
+  background: linear-gradient(90deg, var(--accent-blue), #6BB5C9);
   border-radius: 3px;
   transition: width 1s ease-out;
 }
@@ -685,7 +682,7 @@ button {
 
 /* Privacy - Data Sovereignty */
 .privacy {
-  background: linear-gradient(180deg, transparent, rgba(255, 77, 0, 0.02), transparent);
+  background: linear-gradient(180deg, transparent, rgba(212, 165, 116, 0.06), transparent);
 }
 
 .privacy-shield {
@@ -706,7 +703,7 @@ button {
 .shield-icon svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 20px var(--accent-glow));
+  filter: drop-shadow(0 2px 8px rgba(74, 158, 187, 0.2));
 }
 
 .shield-icon .shield-core {
@@ -728,7 +725,7 @@ button {
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
   border: 1px solid var(--accent-blue);
-  background: rgba(0, 242, 255, 0.05);
+  background: rgba(74, 158, 187, 0.08);
 }
 
 .flow-node span {
@@ -759,8 +756,8 @@ button {
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
   color: var(--text-muted);
-  background: rgba(255, 77, 0, 0.1);
-  border: 1px dashed rgba(255, 77, 0, 0.3);
+  background: rgba(212, 165, 116, 0.15);
+  border: 1px dashed rgba(212, 165, 116, 0.4);
   border-radius: var(--radius);
 }
 
@@ -786,7 +783,7 @@ button {
 
 .privacy-number {
   font-size: 2rem;
-  color: rgba(0, 242, 255, 0.25);
+  color: rgba(74, 158, 187, 0.3);
   position: absolute;
   top: 1rem;
   right: 1.5rem;
@@ -841,10 +838,10 @@ button {
 
 @keyframes status-ripple {
   0% {
-    box-shadow: 0 0 0 0 rgba(0, 242, 255, 0.5);
+    box-shadow: 0 0 0 0 rgba(74, 158, 187, 0.4);
   }
   100% {
-    box-shadow: 0 0 0 20px rgba(0, 242, 255, 0);
+    box-shadow: 0 0 0 20px rgba(74, 158, 187, 0);
   }
 }
 
@@ -855,7 +852,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 242, 255, 0.15);
+  background: rgba(74, 158, 187, 0.15);
   color: var(--accent-blue);
   font-weight: 600;
   font-size: 1.25rem;
@@ -886,7 +883,7 @@ button {
 
 /* Developers */
 .developers {
-  background: linear-gradient(180deg, transparent, rgba(0, 242, 255, 0.02), transparent);
+  background: linear-gradient(180deg, transparent, rgba(74, 158, 187, 0.05), transparent);
 }
 
 .dev-docs {
@@ -915,7 +912,7 @@ button {
 .dev-block code {
   font-family: var(--font-mono);
   font-size: 0.9em;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.06);
   padding: 0.15em 0.4em;
   border-radius: 4px;
   color: var(--accent-blue);
@@ -929,8 +926,8 @@ button {
 }
 
 .dev-block-link:hover {
-  border-color: rgba(0, 242, 255, 0.4);
-  box-shadow: 0 0 30px var(--accent-glow);
+  border-color: rgba(74, 158, 187, 0.4);
+  box-shadow: 0 4px 24px rgba(74, 158, 187, 0.15);
 }
 
 .dev-block-link .link-arrow {
@@ -998,7 +995,7 @@ button {
   padding: 0.4rem 0;
   padding-left: 1.25rem;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .whitepaper-specs li:last-child {
